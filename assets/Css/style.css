@@ -1,0 +1,39 @@
+:root{
+    --azul-fundo: #4169E1;
+    --branco-fonte: #FFFFFF;
+    --amarelo-princicpal: #FFFF00;
+    --amarelo-secundario: #EEDD82;
+}
+
+body{
+    background-color: var(--azul-fundo);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--branco-fonte);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(21px);
+    padding: 16px;
+}
+
+.header__caixa--titulo{
+    font-size: 30px;
+}
+
+.header__caixa--subtitulo{
+    font-size: 1.0em;
+    margin: 0.2rem;
+    color: var(--amarelo-secundario);
+    font-weight: 50px;
+}
+
+.header__button{
+    margin-right: 0.5rem;
+}
