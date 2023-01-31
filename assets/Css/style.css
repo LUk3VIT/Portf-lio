@@ -1,8 +1,11 @@
 :root{
     --azul-fundo: #4169E1;
+    --azul-fundoSecundario: #00008B;
     --branco-fonte: #FFFFFF;
-    --amarelo-princicpal: #FFFF00;
-    --amarelo-secundario: #EEDD82;
+    --cinza-borda: #C0C0C0;
+    --amarelo-ativo: #FFFF00;
+    --amarelo-destivado: #EEDD82;
+    --vermelho-alerta: #8B0000;
 }
 
 body{
@@ -30,10 +33,91 @@ body{
 .header__caixa--subtitulo{
     font-size: 1.0em;
     margin: 0.2rem;
-    color: var(--amarelo-secundario);
+    color: var(--amarelo-destivado);
     font-weight: 50px;
 }
 
 .header__button{
     margin-right: 0.5rem;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 10px;
+    background-color: var(--amarelo-destivado);
+    border: solid 3px var(--cinza-borda);
+    border-radius: 20px;
+    position: absolute;
+    left: 100vh;
+    transition: 0.50s;
+}
+
+.nav--ativo{
+    position: absolute;
+    left: 0;
+    transition: 0.50s;
+    width: 335px;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    margin: auto;    
+    font-size: 1.5rem;
+    border-bottom: solid 2px var(--branco-fonte);
+}
+
+.nav__link{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 1.2em;
+}
+
+.nav__link:hover{
+    color: var(--amarelo-ativo);
+}
+
+.art-sobre{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--azul-fundoSecundario);
+    height: 90vh;
+}
+
+.art-sobre__titulo{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    border-bottom: solid 1px var(--amarelo-ativo);
+}
+
+.art-sobre__informacao{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.informacao__texto{
+    margin: 0.2rem;
+}
+
+.art-sobre__perfil{
+    width: 330px;
+    margin: 0.3rem auto;
+    border: 2px solid var(--amarelo-ativo);
+    opacity: 40%;
+    transition: 0.60s;
+    box-shadow: 0 0 12.5px var(--branco-fonte);
+}
+
+.art-sobre__perfil:hover{
+    background: transparent;
+    box-shadow: 0 0 15px var(--amarelo-ativo);
+    opacity: 100%;
+    transition: 0.60s;
 }
