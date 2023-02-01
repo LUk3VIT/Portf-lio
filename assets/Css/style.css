@@ -44,21 +44,19 @@ body{
 .nav{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    padding: 10px;
+    margin: 1rem 10px;
+    padding: 5px;
     background-color: var(--amarelo-destivado);
     border: solid 3px var(--cinza-borda);
     border-radius: 20px;
     position: absolute;
-    left: 100vh;
-    transition: 0.50s;
+    right: 100vh;
+   
 }
 
 .nav--ativo{
     position: absolute;
-    left: 0;
-    transition: 0.50s;
-    width: 335px;
+    right: 0;
 }
 
 .nav__menu{
@@ -67,6 +65,7 @@ body{
     margin: auto;    
     font-size: 1.5rem;
     border-bottom: solid 2px var(--branco-fonte);
+    margin-bottom: 1.5rem;
 }
 
 .nav__link{
@@ -84,32 +83,34 @@ body{
     flex-direction: column;
     padding: 1rem;
     background-color: var(--azul-fundoSecundario);
-    height: 90vh;
+    height: 100vh;
 }
 
-.art-sobre__titulo{
+.art__titulo{
     font-size: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5rem;
+    margin: 1rem 0.5rem;
     border-bottom: solid 1px var(--amarelo-ativo);
 }
 
-.art-sobre__informacao{
+.arte__informacao{
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
 
 .informacao__texto{
-    margin: 0.2rem;
+    margin: 0.8rem;
+    font-size: 16px;
 }
 
 .art-sobre__perfil{
     width: 330px;
-    margin: 0.3rem auto;
+    margin: 2rem auto 0rem auto;
     border: 2px solid var(--amarelo-ativo);
+    border-radius: 10px;
     opacity: 40%;
     transition: 0.60s;
     box-shadow: 0 0 12.5px var(--branco-fonte);
@@ -121,3 +122,17 @@ body{
     opacity: 100%;
     transition: 0.60s;
 }
+
+.art-formacao{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--azul-fundo);
+    height: 97vh;
+}
+
+.art-formacao__escola{
+    margin: 3rem auto;
+}
+
+
