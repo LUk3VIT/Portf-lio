@@ -56,7 +56,7 @@ body{
 
 .nav--ativo{
     position: absolute;
-    left: 0;
+    right: 0;
     transition: 0.50s;
     width: 335px;
 }
