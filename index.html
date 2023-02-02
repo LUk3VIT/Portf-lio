@@ -15,29 +15,28 @@
 <body>
     <header class="header">
         <div class="header__caixa">
+            
             <h1 class="header__caixa--titulo">Lucas Dias</h1>
             <h2 class="header__caixa--subtitulo">LUk3VIT</h2>
         </div>
         <button class="header__button"><i class="fa-solid fa-bars"></i></button>
     </header>
     <nav class="nav">
-        <h3 class="nav__menu">Menu</h3>
         <a class="nav__link sobre" href="#sobre">Sobre</a>
         <a class="nav__link formacao" href="#formacao">Formação</a>
-        <a class="nav__link projetos" href="#">Projetos</a>
-        <a class="nav__link tecnologia" href="#">Tecnologias</a>
+        <a class="nav__link projetos" href="#projetos">Projetos</a>
+        <a class="nav__link tecnologia" href="#linguagens">Linguagens</a>
     </nav>
     <main>
-        <article id="sobre" class="art-sobre">
+        <article id="sobre" class="art art-sobre ">
             <h2 class="art__titulo">SOBRE MIM</h2>
-            <div class="art-sobre__informacao">
+            <div class="art__informacao">
                 <p class="informacao__texto">Meu nome é Lucas e tenho 18 anos, estou a procura do primeiro emprego de programador como full stack.</p>
                 <p class="informacao__texto">Mexo com programação desde o primeiro ano do ensino médio e foi aí onde eu comecei a programar e não parei mais.
-                
             </div>
             <img class="art-sobre__perfil" src="assets/Img/perfil.jpeg" alt="Foto do Lucas">
         </article>
-        <article id="formacao" class="art-formacao">
+        <article id="formacao" class="art revela art-formacao">
             <h2 class="art__titulo">Formação</h2>
             <div class="art__informacao">
                 <p class="informacao__texto">Ex-estudante da Etec, fiz ensino médio e curso técnico em infomática para internet integrado.</p>
@@ -46,10 +45,43 @@
             </div>
             <img class="art-formacao__escola" src="assets/Img/escola.jpeg" alt="Esola Etec">
         </article>
-    
+        <article id="projetos" class="art revela art-projetos">
+            <h2 class="art__titulo">Projetos</h2>
+                <div class="art__informacao__card">
+                    <div class="informacao__bloco">
+                        <button class="informacao__bloco__botao">Desenvolvimento</button>
+                        <p>Brins</p>
+                    </div>
+                    <div class="informacao__bloco">
+                        <button class="informacao__bloco__botao">EMBREVE</button>
+                    </div>
+                    <div class="informacao__bloco">
+                        <button class="informacao__bloco__botao">EMBREVE</button>
+                    </div>
+                </div>
+        </article>
+        <article id="linguagens" class="art revela art-linguagens">
+            <h1 class="art__titulo">Linguagens</h1>
+            <p class="art-linguagens__informacao informacao__texto">Essas são as linguagens que eu desenvolvo</p>
+            <div class="linguagens-mostra">
+                <ul class="linguagens-mostra__linha">
+                    <li class="linguagens-mostra__coluna"><i class="fa-brands fa-html5"></i></li>
+                    <li class="linguagens-mostra__coluna"><i class="fa-brands fa-css3-alt"></i></li>
+                    <li class="linguagens-mostra__coluna"><i class="fa-brands fa-js"></i></li>
+                    <li class="linguagens-mostra__coluna"><i class="fa-brands fa-php"></i></li>
+                </ul>
+            </div>
+        </article>
     </main>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Contato</h2>
+        <div class="rodape__contato">
+            <a class="linkedin" href="https://www.linkedin.com/in/lucas-dias-b109a7230/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a  class="github" href="https://github.com/LUk3VIT"><i class="fa-brands fa-github"></i>GitHub</a>
+        </div>
+    </footer>
     
-
+<script src="assets/Js/revela.js"></script>
 <script src="assets/Js/navegacao.js"></script>
 <script src="https://kit.fontawesome.com/4fdfb56204.js" crossorigin="anonymous"></script>
 </body>

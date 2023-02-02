@@ -6,6 +6,10 @@
     --amarelo-ativo: #FFFF00;
     --amarelo-destivado: #EEDD82;
     --vermelho-alerta: #8B0000;
+    --azul-rodape: #000080;
+    --preto-link: #000000;
+    --preoto-link: #24292f;
+    --azul-link: #0a66c2;
 }
 
 body{
@@ -44,14 +48,16 @@ body{
 .nav{
     display: flex;
     flex-direction: column;
-    margin: 1rem 10px;
+    align-items: center;
+    margin: 1rem 0px;
     padding: 5px;
     background-color: var(--amarelo-destivado);
-    border: solid 3px var(--cinza-borda);
-    border-radius: 20px;
+    border-bottom: solid 3px var(--cinza-borda);
+    border-top: solid 3px var(--cinza-borda);
+    border-left: solid 3px var(--cinza-borda);
+    border-radius: 20px 0px 0px 20px;
     position: absolute;
     right: 100vh;
-   
 }
 
 .nav--ativo{
@@ -59,31 +65,31 @@ body{
     right: 0;
 }
 
-.nav__menu{
-    display: flex;
-    align-items: center;
-    margin: auto;    
-    font-size: 1.5rem;
-    border-bottom: solid 2px var(--branco-fonte);
-    margin-bottom: 1.5rem;
-}
-
 .nav__link{
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin: 1rem 0.5rem;
     font-size: 1.2em;
 }
 
-.nav__link:hover{
-    color: var(--amarelo-ativo);
-}
-
-.art-sobre{
+.art{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+}
+
+.revela{
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revela.ativo{
+    transform:  translateY(0);
+    opacity: 1;
+}
+
+.art-sobre{
     background-color: var(--azul-fundoSecundario);
-    height: 100vh;
 }
 
 .art__titulo{
@@ -95,7 +101,7 @@ body{
     border-bottom: solid 1px var(--amarelo-ativo);
 }
 
-.arte__informacao{
+.art__informacao{
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
@@ -124,15 +130,120 @@ body{
 }
 
 .art-formacao{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
     background-color: var(--azul-fundo);
-    height: 97vh;
+    height: 85vh;
 }
 
 .art-formacao__escola{
     margin: 3rem auto;
 }
 
+.art-projetos{
+    background-color: var(--azul-fundoSecundario);
+    height: 73vh;
+}
+
+.art__informacao__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.informacao__bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px var(--amarelo-destivado);
+    padding: 25px;
+    width: 200px;
+    margin: 1rem;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(21px);
+    transition: 0.20s;
+}
+
+.informacao__bloco:hover{
+    box-shadow: 0 0 15px var(--amarelo-ativo);
+    font-size: 1.5rem;
+    transition: 0.20s;
+}
+
+.art-linguagens{
+    background-color: var(--azul-fundo);
+    height: 60vh;
+}
+
+.art-linguagens__informacao{
+    margin: 2rem 1rem;
+}
+
+.linguagens-mostra{
+    margin: 1.5rem auto;
+    width: 250px;
+    border: solid 1px var(--amarelo-destivado);
+    background-color: var(--azul-fundoSecundario);
+    padding: 28px;
+}
+
+.linguagens-mostra:hover{
+    box-shadow: 0 0 15px var(--amarelo-ativo);
+    padding: 38px;
+}
+
+.linguagens-mostra__linha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linguagens-mostra__linha{
+    font-size: 1.5rem;
+    color: var(--branco-fonte);
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-rodape);
+    padding: 16px;
+    height: 30vh;
+}
+
+.rodape__titulo{
+    margin: 1.5rem;
+    font-size: 20px;
+}
+
+.rodape__contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 255px;
+}
+
+.linkedin{
+    display: flex;
+    justify-content: flex-start;
+    border: solid 1px var(--azul-link);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--azul-link);
+    margin: 11px;
+}
+
+.github{
+    display: flex;
+    justify-content: center;
+    border: solid 1px var(--preto-link);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--preoto-link);
+    margin: 10px;
+}
 
