@@ -248,6 +248,14 @@ body{
     transition: 0.20s;
 }
 
+.informacao__bloco__link{
+    font-size: 1.5rem;
+}
+
+.informacao__bloco__link:hover{
+    color: #8B0000;
+}
+
 @media screen and (min-width:1440px) {
     .art-projetos{
         height: 100vh;
@@ -329,7 +337,6 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: ;
         margin:auto;
     }
 }
